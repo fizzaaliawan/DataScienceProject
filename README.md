@@ -1,6 +1,4 @@
 
----
-
 ## Project Overview
 
 **Title**: Remote Work and Urban Traffic Reduction  
