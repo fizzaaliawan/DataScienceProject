@@ -1,21 +1,19 @@
-# DATA DICTIONARY - Remote Work and Urban Traffic Reduction  
 
- # Purpose:
- Complete documentation of all variables in processed datasets  
-
+**Project:** Remote Work and Urban Traffic Reduction  
+**Purpose:** Complete documentation of all variables in processed datasets
+ 
 ## REMOTE WORKER PRODUCTIVITY DATASET
-**File**: `data/processed/remote_worker_cleaned.csv`  
-**Source**: Kaggle – Remote Worker Productivity Dataset (https://www.kaggle.com/datasets/ziya07/remote-worker-productivity-dataset)
-**Time Period**: 2022-2025  
-**Total Records**: ~XX,XXX survey responses (after cleaning)  
+**File**: `cleaned_remote_worker_productivity.csv`  
+**Source**: Kaggle – (https://www.kaggle.com/datasets/ziya07/remote-worker-productivity-dataset) 
+**Total Records**: 1,001 survey responses (after cleaning)  
 
 ### Variable Definitions:
 
 | Variable | Data Type | Description | Example Values | Notes |
 |----------|-----------|-------------|----------------|-------|
-| `worker_id` | character | Unique worker identifier | "RW_00123" | Primary key |
-| `location_type` | character | Type of location (home/office/hybrid) | "Home" | Used for analysis of remote work adoption |
-| `industry_sector` | character | Industry of worker | "IT", "Finance" | Standardized industry categories |
+| `remote_worker_id` | character | Unique worker identifier | "RW_00123" | Primary key |
+| `location` | character | Worker city/location | "Karachi" | Standardized city name |
+| `industry` | character | Industry of worker | "IT", "Finance" | Standardized industry categories |
 | `age` | integer | Age of worker | 29 | Years |
 | `experience_years` | numeric | Years of professional experience | 5 | Years |
 | `average_daily_work_hours` | numeric | Average hours worked per day | 7.8 | Hours/day |
@@ -34,10 +32,9 @@
 ---
 
 ## URBAN TRAFFIC DATASET
-**File**: `data/processed/traffic_cleaned.csv`  
-**Source**: Kaggle – Urban Traffic Congestion Dataset (https://www.kaggle.com/datasets/chanchal27/urban-traffic-congestion-data  )
-**Time Period**: 2022-2025  
-**Total Records**: ~XX,XXX city-level traffic observations (after cleaning)  
+**File**: `cleaned_traffic_data.csv`  
+**Source**: Kaggle –  https://www.kaggle.com/datasets/chanchal27/urban-traffic-congestion-data  
+**Total Records**: 4,356 city-level traffic observations (after cleaning)  
 
 ### Variable Definitions:
 
@@ -57,14 +54,16 @@
 | `Speed Factor` | numeric | Factor comparing actual vs free flow speed | 0.65 | Fraction |
 | `CI` | numeric | Congestion index | 0.72 | Computed metric |
 | `Congestion Level` | factor | Congestion category | Low, Medium | Derived from vehicle count, speed, and CI |
+| `traffic_reduction_pct` | numeric | Computed traffic reduction vs baseline | 12.5 | % reduction |
+| `congestionStatus` | factor | Congestion category | Low, Medium | Aggregated for modeling |
 
 ---
 
 ## MERGED CITY-LEVEL ANALYTICAL DATASET
-**File**: `data/processed/merged_remote_traffic.csv`  
-**Description**: Combines remote worker productivity and urban traffic datasets for city-level analysis  
+**File**: `merged_remote_trafficc.csv`  
+**Total Records**: 1,001 (matching remote worker dataset)  
 
-### Key Columns:
+### Variable Definitions:
 
 | Column | Description | Notes |
 |--------|-------------|-------|
@@ -86,9 +85,9 @@
 | `productivity_label` | Productivity category | Low, Moderate, High, Very High |
 | `productivity_score` | Composite productivity metric | 0–100 |
 | `congestionStatus` | Congestion category | Low, Medium |
-| `avg_vehicle_count` | Average vehicle count | Count |
-| `avg_speed` | Average speed of vehicles | km/h |
-| `avg_traffic_reduction` | Average traffic reduction % | % |
+| `avg_vehicle_count` | Average vehicle count for worker’s city | Count |
+| `avg_speed` | Average speed of vehicles in worker’s city | km/h |
+| `avg_traffic_reduction` | Average traffic reduction in worker’s city | % |
 
 ---
 
@@ -105,7 +104,5 @@
 - **Very High:** productivity_score ≥ 85  
 
 ---
-
-
 
 
