@@ -4,7 +4,7 @@
  
 ## REMOTE WORKER PRODUCTIVITY DATASET
 **File**: `cleaned_remote_worker_productivity.csv`  
-**Source:** https://www.kaggle.com/datasets/ziya07/remote-worker-productivity-dataset
+**Source:**  https://www.kaggle.com/datasets/ziya07/remote-worker-productivity-dataset
 **Total Records:** 1,001 survey responses (after cleaning)
 
 ### Variable Definitions:
@@ -33,8 +33,9 @@
 
 ## URBAN TRAFFIC DATASET
 **File**: `cleaned_traffic_data.csv`  
-**Source**:https://www.kaggle.com/datasets/chanchal27/urban-traffic-congestion-data
-**Total Records**: 4,356 city-level traffic observations (after cleaning)  
+**Source:** https://www.kaggle.com/datasets/ziya07/remote-worker-productivity-dataset  
+**Total Records:** 1,001 survey responses (after cleaning)
+
 
 ### Variable Definitions:
 
