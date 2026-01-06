@@ -1,0 +1,5 @@
+Prediction,Reference,Freq
+Low,Low,96
+Medium,Low,0
+Low,Medium,0
+Medium,Medium,104
