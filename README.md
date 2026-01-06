@@ -99,46 +99,6 @@ This project analyzes the impact of remote work on urban traffic congestion and 
 
 ---
 
-## Key Findings & Insights
-
-### 1. Traffic Reduction Patterns
-- Higher remote work adoption reduces vehicle counts and urban congestion  
-- Maximum traffic reduction occurs during peak hours in cities with high remote participation  
-
-### 2. Productivity Insights
-- Moderate positive correlation between traffic reduction and productivity ratios  
-- Industry and location significantly influence productivity trends  
-
-### 3. Predictive Model Performance
-- Random Forest models outperform linear regression in classification and regression tasks  
-- Most influential features: productivity score, avg vehicle count, task completion rate  
-
-### 4. Practical Implications
-- Remote work policies can substantially reduce urban congestion  
-- City planners can optimize traffic management based on predicted congestion  
-- Organizations can assess productivity trends relative to remote work adoption  
-
----
-
-## Methodology Highlights
-
-1. **Data Quality Assurance**
-   - Comprehensive validation at every step  
-   - Removal of duplicates and missing values  
-   - Data type standardization  
-
-2. **Feature Engineering**
-   - Traffic reduction percentage and productivity ratios  
-   - Encoding categorical variables (`location`, `industry`, `congestionStatus`)  
-
-3. **Model Evaluation**
-   - Train-test split (80-20)  
-   - Regression metrics: RMSE, R²  
-   - Classification metrics: Accuracy, confusion matrix  
-   - Feature importance analysis  
-
----
-
 ## Technical Implementation
 
 **R Packages Used**:
@@ -146,48 +106,6 @@ This project analyzes the impact of remote work on urban traffic congestion and 
 - Machine Learning: caret, randomForest  
 - Visualization: ggplot2  
 
-**Code Quality**:
-- Modular script structure  
-- Reproducible using `set.seed(123)`  
-- Comprehensive comments and logging  
-
-**Reproducibility**:
-```r
-# Run complete project pipeline
-source("scripts/phase1_data_import_clean_transform.R")
-source("scripts/phase2_EDA_visualization.R")
-source("scripts/phase3_predictive_modeling.R")
-````
-
----
-
-## Deliverables
-
-### Data Files
-
-* `cleaned_traffic_data.csv`
-* `cleaned_remote_worker_productivity.csv`
-* `merged_remote_traffic.csv`
-
-### Model Outputs
-
-* Regression predictions, RMSE/R² metrics
-* Random Forest feature importance plots
-* Confusion matrix for classification
-
-### Visualizations
-
-* Productivity distributions, traffic reduction trends
-* Correlation heatmaps
-* Scatter plots for productivity vs traffic reduction
-
-### Scripts
-
-1. `phase1_data_import_clean_transform.R`
-2. `phase2_EDA_visualization.R`
-3. `phase3_predictive_modeling.R`
-
----
 
 ## Practical Applications
 
@@ -213,16 +131,6 @@ source("scripts/phase3_predictive_modeling.R")
 * Build interactive dashboards for city planners
 
 ---
-
-## Conclusions
-
-The project demonstrates a complete data science workflow from data preparation to predictive modeling. Random Forest models provide robust predictions for traffic reduction and congestion status. Remote work adoption can significantly reduce urban traffic without lowering productivity.
-
-**Overall Status**:  Project Complete – All Phases Successful
-
----
-
-## Acknowledgments
 
 **Team Members**:
 
