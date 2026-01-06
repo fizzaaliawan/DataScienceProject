@@ -135,5 +135,5 @@ This project analyzes the impact of remote work on urban traffic congestion and 
 * Fizza Ali (SP23-BCS-043)
 * Laiba Ajmal (SP23-BCS-060)
 * Amina Kainat (SP23-BCS-018)
-
+* Zainab Naeem (SP22-BCS-179)
 
