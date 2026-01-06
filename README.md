@@ -24,7 +24,7 @@ This project analyzes the impact of remote work on urban traffic congestion and 
 
 ## Three-Phase Methodology
 
-### Phase 1: Data Importing, Cleaning & Transformation ✅
+### Phase 1: Data Importing, Cleaning & Transformation 
 **Objective**: Import, clean, and merge traffic and remote work datasets for analysis.  
 
 **Achievements**:
