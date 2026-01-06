@@ -7,8 +7,6 @@
 1. [Urban Traffic Congestion Dataset](https://www.kaggle.com/datasets/chanchal27/urban-traffic-congestion-data)  
 2. [Remote Worker Productivity Dataset](https://www.kaggle.com/datasets/ziya07/remote-worker-productivity-dataset)  
 
-**Time Period**: 2022-2025 (survey and traffic records)  
-
 **Objectives**:
 1. Quantify the effect of remote work on urban traffic congestion.  
 2. Explore relationships between worker productivity and traffic reduction.  
