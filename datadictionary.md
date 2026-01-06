@@ -1,7 +1,4 @@
-
-# ============================================================================  
 # DATA DICTIONARY - Remote Work and Urban Traffic Reduction  
-# ============================================================================  
 
  # Purpose:
  Complete documentation of all variables in processed datasets  
